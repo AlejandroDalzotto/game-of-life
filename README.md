@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Conway's Game of Life
+
+This is a recreation of **John Conway's Game of Life**, implemented using **Next.js** and bundled with **Bun**. The Game of Life is a cellular automaton where cells on a grid live, die, or multiply based on simple rules. It was invented by John Conway in 1970 and has fascinated mathematicians and computer scientists ever since.
+
+## Table of Contents
+
+- [About](#about)
+- [Features](#features)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+- [How to Use](#how-to-use)
+
+## About
+
+The Game of Life is a zero-player game, meaning that its evolution is dictated by its initial state, with no further input from humans. The game consists of a grid of cells that evolve based on the following rules:
+
+1. **Any live cell with two or three live neighbors survives.**
+2. **Any dead cell with exactly three live neighbors becomes a live cell.**
+3. **All other live cells die in the next generation. Similarly, all other dead cells stay dead.**
+
+This project is built with the goal of providing an interactive visualization of the Game of Life using a web-based interface.
+
+## Features
+
+- Visualize the grid of cells, where you can add, remove, and play the game.
+- Start, stop, and reset the simulation.
+
+## Technologies
+
+- **Next.js**: A React-based framework for building server-side rendered and statically generated applications.
+- **Bun**: A modern JavaScript bundler that helps improve development and build performance.
+- **Tailwind CSS**: For styling the app with utility-first classes.
 
 ## Getting Started
 
-First, run the development server:
+To get this project up and running on your local machine, follow the steps below:
+
+### Prerequisites
+
+Make sure you have the following installed:
+- **Bun** (https://bun.sh/)
+- **Node.js** (for running the app if Bun isn't installed, though Bun is recommended for this app)
+
+### Installation
+
+1. Clone the repository:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
+git clone https://github.com/yourusername/game-of-life-nextjs.git
+cd game-of-life-nextjs
+```
+
+2. Install dependencies using Bun:
+
+```bash
+bun install
+```
+
+3. Run the development server:
+```bash
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+4. Open the app in your browser:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Navigate to http://localhost:3000 to see the Game of Life in action.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## How to Use
+Once the app is running:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Click on cells to toggle them between alive (white) and dead (black).
+- Start the simulation by clicking the “Start” button.
+- Pause the simulation by clicking the “Pause” button.
+- Reset the grid by clicking the “Reset” button.
