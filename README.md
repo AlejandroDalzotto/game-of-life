@@ -46,8 +46,8 @@ Make sure you have the following installed:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/game-of-life-nextjs.git
-cd game-of-life-nextjs
+git clone https://github.com/AlejandroDalzotto/game-of-life.git
+cd game-of-life
 ```
 
 2. Install dependencies using Bun:
